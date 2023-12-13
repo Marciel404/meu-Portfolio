@@ -2,6 +2,7 @@ import Link from "next/link";
 import HEADER from "../components/header";
 import Script from "next/script";
 import { useEffect } from "react";
+import SIDEBAR from "../components/sidebar";
 
 export default function index() {
   return (
@@ -18,7 +19,9 @@ export default function index() {
                 ["botKamai", "Marciel404/discord-kamai-bot"],
                 ["hexacolors", "Marciel404/hexacolors"],
                 ["markuus", "Marciel404/MarkuusBot"],
-                ["plmine", "Marciel404/teste-plugin-bau-de-morte"]
+                ["plmine", "Marciel404/teste-plugin-bau-de-morte"],
+                ["myPortifol", "Marciel404/meu-portifolio"],
+                ["EstudosJKT", "Marciel404/Estudos-JAVA-E-Kotlin"]
               ]) {
               const i = document.getElementById(dId)
               fetch("/api/getstar", { headers: { repo: `${repo}`, pId: i } })
@@ -33,6 +36,8 @@ export default function index() {
       </Script>
 
       <HEADER />
+
+      <SIDEBAR />
 
       <div className="flex justify-center items-center">
 
@@ -59,255 +64,369 @@ export default function index() {
 
         <div className="text-center">
 
-          <div className="flex justify-center">
+          <div className="projects flex justify-center">
 
-            <div className="border-solid bg-slate-800 rounded-lg m-3" >
+            <div className="flex justify-center">
 
-              <Link href="https://github.com/Marciel404/site-dmargo" className="no-underline">
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
 
-                <div className="flex items-center justify-between m-3">
+                <Link href="https://github.com/Marciel404/site-dmargo" className="no-underline">
 
-                  <h3 className="">Site D'Margo</h3>
+                  <div className="flex items-center justify-between m-3">
 
-                  <img src="/svgs/githubicon.svg" alt="git" />
+                    <h3 className="">Site D'Margo</h3>
 
-                </div>
+                    <img src="/svgs/githubicon.svg" alt="git" />
 
-                <div className="text-start">
+                  </div>
 
-                  <p className="tresPontinhos">
-                    Site da Loja D'Margo em desenvolvimento
-                  </p>
+                  <div className="text-start">
 
-                  <br />
+                    <p className="tresPontinhos">
+                      Site da Loja D'Margo em desenvolvimento
+                    </p>
 
-                  <p className="tresPontinhos">
-                    Site para estudar desenvolvimento web e ajudar a loja da minha tia, neste site <br />
-                    estudei sobre front-end, back-end e banco de dados noSql com site
-                  </p>
+                    <br />
 
-                </div>
+                    <p className="tresPontinhos">
+                      Site para estudar desenvolvimento web e ajudar a loja da minha tia, neste site <br />
+                      estudei sobre front-end, back-end e banco de dados noSql com site
+                    </p>
 
-                <div className="flex items-center justify-start m-3">
+                  </div>
 
-                  <i className="material-symbols-outlined h-7">star_half</i>
+                  <div className="flex items-center justify-start m-3">
 
-                  <h4>Estrelas</h4>
+                    <i className="material-symbols-outlined h-7">star_half</i>
 
-                  <p className="ml-2" id="sitemargo"></p>
+                    <h4>Estrelas</h4>
 
-                </div>
+                    <p className="ml-2" id="sitemargo"></p>
 
-              </Link>
+                  </div>
 
-            </div>
+                </Link>
 
-            <div className="border-solid bg-slate-800 rounded-lg m-3" >
-
-              <Link href="https://github.com/Marciel404/NewFunctionsPYC" className="no-underline">
-
-                <div className="flex items-center justify-between m-3">
-
-                  <h3 className="">NewFunctionsPYC</h3>
-
-                  <img src="/svgs/githubicon.svg" alt="git" ></img>
-
-                </div>
-
-                <div className="text-start">
-
-                  <p className="tresPontinhos">
-                    Lib NewFunctionsPYC
-                  </p>
-
-                  <br />
-
-                  <p className="tresPontinhos">
-                    NewFunctionsPYC é uma livraria feita para adicionar novas <br />
-                    funções a livraria de criação do discord chamada py-cord
-                  </p>
-
-                </div>
-
-                <div className="flex items-center justify-start m-3">
-
-                  <i className="material-symbols-outlined h-7">star_half</i>
-
-                  <h4>Estrelas</h4>
-
-                  <p className="ml-2" id="newFpyc"></p>
-
-                </div>
-
-              </Link>
+              </div>
 
             </div>
 
-            <div className="border-solid bg-slate-800 rounded-lg m-3" >
+            <div className="flex justify-center">
 
-              <Link href="https://github.com/Marciel404/discord-kamai-bot" className="no-underline">
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
 
-                <div className="flex items-center justify-between m-3">
+                <Link href="https://github.com/Marciel404/NewFunctionsPYC" className="no-underline">
 
-                  <h3 className="">Kamaitachi Bot</h3>
+                  <div className="flex items-center justify-between m-3">
 
-                  <img src="/svgs/githubicon.svg" alt="git" ></img>
+                    <h3 className="">NewFunctionsPYC</h3>
 
-                </div>
+                    <img src="/svgs/githubicon.svg" alt="git" ></img>
 
-                <div className="text-start">
+                  </div>
 
-                  <p className="tresPontinhos">
-                    Bot discord Kamaitachi
-                  </p>
+                  <div className="text-start">
 
-                  <br />
+                    <p className="tresPontinhos">
+                      Lib NewFunctionsPYC
+                    </p>
 
-                  <p className="tresPontinhos">
-                    Bot discord do servidor do Kamaitachi, gerenciava as atividades do <br />
-                    servidor e moderava os membros com acesso a banco de dados e informações
-                  </p>
+                    <br />
 
-                </div>
+                    <p className="tresPontinhos">
+                      NewFunctionsPYC é uma livraria feita para adicionar novas <br />
+                      funções a livraria de criação do discord chamada py-cord
+                    </p>
 
-                <div className="flex items-center justify-start m-3">
+                  </div>
 
-                  <i className="material-symbols-outlined h-7">star_half</i>
+                  <div className="flex items-center justify-start m-3">
 
-                  <h4>Estrelas</h4>
+                    <i className="material-symbols-outlined h-7">star_half</i>
 
-                  <p className="ml-2" id="botKamai"></p>
+                    <h4>Estrelas</h4>
 
-                </div>
+                    <p className="ml-2" id="newFpyc"></p>
 
-              </Link>
+                  </div>
+
+                </Link>
+
+              </div>
+
+            </div>
+
+            <div className="flex justify-center">
+
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
+
+                <Link href="https://github.com/Marciel404/discord-kamai-bot" className="no-underline">
+
+                  <div className="flex items-center justify-between m-3">
+
+                    <h3 className="">Kamaitachi Bot</h3>
+
+                    <img src="/svgs/githubicon.svg" alt="git" ></img>
+
+                  </div>
+
+                  <div className="text-start">
+
+                    <p className="tresPontinhos">
+                      Bot discord Kamaitachi
+                    </p>
+
+                    <br />
+
+                    <p className="tresPontinhos">
+                      Bot discord do servidor do Kamaitachi, gerenciava as atividades do <br />
+                      servidor e moderava os membros com acesso a banco de dados e informações
+                    </p>
+
+                  </div>
+
+                  <div className="flex items-center justify-start m-3">
+
+                    <i className="material-symbols-outlined h-7">star_half</i>
+
+                    <h4>Estrelas</h4>
+
+                    <p className="ml-2" id="botKamai"></p>
+
+                  </div>
+
+                </Link>
+
+              </div>
+
+            </div>
+
+            <div className="flex justify-center">
+
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
+
+                <Link href="https://github.com/Marciel404/meu-portifolio" className="no-underline">
+
+                  <div className="flex items-center justify-between m-3">
+
+                    <h3 className="">Meu Portifolio</h3>
+
+                    <img src="/svgs/githubicon.svg" alt="git" ></img>
+
+                  </div>
+
+                  <div className="text-start">
+
+                    <p className="tresPontinhos">
+                      Meu Site Portifolio
+                    </p>
+
+                    <br />
+
+                    <p className="tresPontinhos">
+                      Meu portifolio é o site aonde eu me apresento e minhas habilidades <br />
+                      e alguns projetos
+                    </p>
+
+                  </div>
+
+                  <div className="flex items-center justify-start m-3">
+
+                    <i className="material-symbols-outlined h-7">star_half</i>
+
+                    <h4>Estrelas</h4>
+
+                    <p className="ml-2" id="myPortifol"></p>
+
+                  </div>
+
+                </Link>
+
+              </div>
 
             </div>
 
           </div>
 
-          <div className="flex justify-center">
+          <div className="projects flex justify-center">
 
-            <div className="border-solid bg-slate-800 rounded-lg m-3" >
+            <div className="flex justify-center">
 
-              <Link href="https://github.com/Marciel404/hexacolors" className="no-underline">
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
 
-                <div className="flex items-center justify-between m-3">
+                <Link href="https://github.com/Marciel404/hexacolors" className="no-underline">
 
-                  <h3 className="">Hexacolors</h3>
+                  <div className="flex items-center justify-between m-3">
 
-                  <img src="/svgs/githubicon.svg" alt="git" />
+                    <h3 className="">Hexacolors</h3>
 
-                </div>
+                    <img src="/svgs/githubicon.svg" alt="git" />
 
-                <div className="text-start">
+                  </div>
 
-                  <p className="tresPontinhos">
-                    Lib Hexacolors
-                  </p>
+                  <div className="text-start">
 
-                  <br />
+                    <p className="tresPontinhos">
+                      Lib Hexacolors
+                    </p>
 
-                  <p className="tresPontinhos">
-                    Hexacolors é uma livraria que converte cores em hexadecimal (e outras) <br />
-                    para cores entendíveis pelo python
-                  </p>
+                    <br />
 
-                </div>
+                    <p className="tresPontinhos">
+                      Hexacolors é uma livraria que converte cores em hexadecimal (e outras) <br />
+                      para cores entendíveis pelo python
+                    </p>
 
-                <div className="flex items-center justify-start m-3">
+                  </div>
 
-                  <i className="material-symbols-outlined h-7">star_half</i>
+                  <div className="flex items-center justify-start m-3">
 
-                  <h4>Estrelas</h4>
+                    <i className="material-symbols-outlined h-7">star_half</i>
 
-                  <p className="ml-2" id="hexacolors"></p>
+                    <h4>Estrelas</h4>
 
-                </div>
+                    <p className="ml-2" id="hexacolors"></p>
 
-              </Link>
+                  </div>
 
-            </div>
+                </Link>
 
-            <div className="border-solid bg-slate-800 rounded-lg m-3" >
-
-              <Link href="https://github.com/Marciel404/MarkuusBot" className="no-underline">
-
-                <div className="flex items-center justify-between m-3">
-
-                  <h3 className="">Markuus</h3>
-
-                  <img src="/svgs/githubicon.svg" alt="git" ></img>
-
-                </div>
-
-                <div className="text-start">
-
-                  <p className="tresPontinhos">
-                    Markuus bot discord
-                  </p>
-
-                  <br />
-
-                  <p className="tresPontinhos">
-                    Um bot de discord com foco em moderação e diversão contando <br />
-                    com edição de foto e vídeo gerenciamento de banco de dados
-                  </p>
-
-                </div>
-
-                <div className="flex items-center justify-start m-3">
-
-                  <i className="material-symbols-outlined h-7">star_half</i>
-
-                  <h4>Estrelas</h4>
-
-                  <p className="ml-2" id="markuus"></p>
-
-                </div>
-
-              </Link>
+              </div>
 
             </div>
 
-            <div className="border-solid bg-slate-800 rounded-lg m-3" >
+            <div className="flex justify-center">
 
-              <Link href="https://github.com/Marciel404/teste-plugin-bau-de-morte" className="no-underline">
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
 
-                <div className="flex items-center justify-between m-3">
+                <Link href="https://github.com/Marciel404/MarkuusBot" className="no-underline">
 
-                  <h3 className="">Plugin Minecraft</h3>
+                  <div className="flex items-center justify-between m-3">
 
-                  <img src="/svgs/githubicon.svg" alt="git" ></img>
+                    <h3 className="">Markuus</h3>
 
-                </div>
+                    <img src="/svgs/githubicon.svg" alt="git" ></img>
 
-                <div className="text-start">
+                  </div>
 
-                  <p className="tresPontinhos">
-                    Um simples puglin de Minecraft
-                  </p>
+                  <div className="text-start">
 
-                  <br />
+                    <p className="tresPontinhos">
+                      Markuus bot discord
+                    </p>
 
-                  <p className="tresPontinhos">
-                    Este é um plugin de minecraft de mbau de morte de quando eu estava <br />
-                    jogando minecraft com uns amigos
-                  </p>
+                    <br />
 
-                </div>
+                    <p className="tresPontinhos">
+                      Um bot de discord com foco em moderação e diversão contando <br />
+                      com edição de foto e vídeo gerenciamento de banco de dados
+                    </p>
 
-                <div className="flex items-center justify-start m-3">
+                  </div>
 
-                  <i className="material-symbols-outlined h-7">star_half</i>
+                  <div className="flex items-center justify-start m-3">
 
-                  <h4>Estrelas</h4>
+                    <i className="material-symbols-outlined h-7">star_half</i>
 
-                  <p className="ml-2" id="plmine"></p>
+                    <h4>Estrelas</h4>
 
-                </div>
+                    <p className="ml-2" id="markuus"></p>
 
-              </Link>
+                  </div>
+
+                </Link>
+
+              </div>
+
+            </div>
+
+            <div className="flex justify-center">
+
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
+
+                <Link href="https://github.com/Marciel404/teste-plugin-bau-de-morte" className="no-underline">
+
+                  <div className="flex items-center justify-between m-3">
+
+                    <h3 className="">Plugin Minecraft</h3>
+
+                    <img src="/svgs/githubicon.svg" alt="git" ></img>
+
+                  </div>
+
+                  <div className="text-start">
+
+                    <p className="tresPontinhos">
+                      Um simples puglin de Minecraft
+                    </p>
+
+                    <br />
+
+                    <p className="tresPontinhos">
+                      Este é um plugin de minecraft de mbau de morte de quando eu estava <br />
+                      jogando minecraft com uns amigos
+                    </p>
+
+                  </div>
+
+                  <div className="flex items-center justify-start m-3">
+
+                    <i className="material-symbols-outlined h-7">star_half</i>
+
+                    <h4>Estrelas</h4>
+
+                    <p className="ml-2" id="plmine"></p>
+
+                  </div>
+
+                </Link>
+
+              </div>
+
+            </div>
+
+            <div className="flex justify-center">
+
+              <div className="border-solid bg-slate-800 rounded-lg m-3 flex justify-center h-48 w-64 items-center" >
+
+                <Link href="https://github.com/Marciel404/Estudos-JAVA-E-Kotlin" className="no-underline">
+
+                  <div className="flex items-center justify-between m-3">
+
+                    <h3 className="">Estudos-JAVA-E-Kotlin</h3>
+
+                    <img src="/svgs/githubicon.svg" alt="git" ></img>
+
+                  </div>
+
+                  <div className="text-start">
+
+                    <p className="tresPontinhos">
+                      Estudos de Java e Kotlin
+                    </p>
+
+                    <br />
+
+                    <p className="tresPontinhos">
+                      Estudos Java é um repositorio aonde eu publiquei o meu  <br />
+                      estudo de Java e Kotlin com a rede social chamada discord
+                    </p>
+
+                  </div>
+
+                  <div className="flex items-center justify-start m-3">
+
+                    <i className="material-symbols-outlined h-7">star_half</i>
+
+                    <h4>Estrelas</h4>
+
+                    <p className="ml-2" id="EstudosJKT"></p>
+
+                  </div>
+
+                </Link>
+
+              </div>
 
             </div>
 
